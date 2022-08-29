@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+
+    <title></title>
+    <link rel="stylesheet" href="style1.css">
+
+</head>
+<body>
+    <div class="text-center">
+       
+    </div>
+    <div>
+
+        <center>
+            <table class="tcolor" width="80%">
+                <colgroup>
+                    <col style="background-color: #56c5e1">
+                </colgroup>
+                <tr>
+                   
+                    <td colspan="3" bgcolor="#56c5e1" height="20" style="font-family:verdana">
+                        <div class="navi">
+
+                            
+                            <a class="active" href="Home.html">About Us</a>
+                            <a href="Facility.html">Facilities for you</a>
+                            <a href="#Around">Around</a>
+	           <a href="#Rooms">Rooms</a>
+                            <a href="Booking.html">Booking</a>
+                            
+                        </div>
+                    </td>
+                </tr>
+              <tr>
+               <td colspan="3">
+                    <div class="slcon">
+
+<div class="him fade">
+
+  <img src="Presentation1.jpg" style="width:100%">
+
+</div>
+
+<div class="him fade">
+ 
+  <img src="im2.jpg" style="width:100%">
+  
+</div>
+
+
+
+</div>
+<br>
+
+<div>
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+              
+              </td>
+           </tr>
+               
+                <tr>
+                    <td colspan="3">
+                        <p align="center" class="font1"><i>“The <b>Ocean</b> stirs the heart, inspires the imagination, and brings eternal joy to the soul."</i></p>
+                          <p align="right" class="font1"><i>– Wyland</i></p>
+                        
+                    </td>
+                </tr>
+                <colgroup>
+                    <col span="2" style="background-color:#e2fbfd   ;">
+                </colgroup>
+                <tr>
+                    <td width="25%">
+                        <div class="vernavi">
+                            <a class="active" href="Home.html">About Us</a>
+                            <a href="Facility.html">Facilities for you</a>
+                            <a href="#Around">Around</a>
+	           <a href="#Rooms">Rooms</a>
+                            <a href="Booking.html">Booking</a>
+                        </div>
+                    </td>
+                    <td width="20%"><img src="im1.jpg" width="250" height="250" /></td>
+                    <td>
+                        <h2>Good Shepherd Sisters</h2>
+                        <p>
+                            The Good Shepherd Sisters of Sri Lanka has started
+                            their services for over 175 years. Although their
+                            main service seems to be helping Parish work,
+                            they are doing lot more services to the people
+                            who are needy. Some of the services they are
+                            providing are education for children, providing
+                            shelter for children seeking probationary
+                            assistance for various reasons, providing
+                            shelter for
+                        </p>
+
+
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="2">
+                        <p>
+                            unmarried mothers and taking care of
+                            their unborn and introducing a good parent for
+                            the babies after born, intervene and take care
+                            of women who are helpless due to various reasons
+                            such as alcoholism, due to raping and
+                            prostitution. Among all these services
+                            Community Based Child Protection is one of
+                            these big projects.
+                        </p>
+                        <p><a href="https://www.gssslpk.lk">Like to learn more about  Us...</a></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="2">
+                        <h2>CBCP</h2>
+                        <p>
+                            The future of a country will depend on the
+                            children living today. If the children are
+                            directed correctly, educated, and cared well
+                            today, the country’s future will flourish.
+                            So, our responsibility today is to educate
+                            and protect the children well, but that is
+                            not what is happening today. If the majority
+                            of children give up education and do jobs
+                            with their parents, their lives will not be
+                            secure.
+                        </p>
+                        <p>
+                            Community Base child protection program’s
+                            aim is to protect children. Here they
+                            concentrate on children in coastal areas
+                            and in tea estates. Instead of keeping
+                            the children in Children’s Homes, the
+                            project will try to achieve the
+                            objectives by visiting communities
+                            where they are, that is the villages and
+                            developing them with the help of the
+                            village community. To develop the
+                            children, first their families must be
+                            uplifted economically.  Therefore, under
+                            this project, they provide skill
+                            training for the parents of the children
+                            to empower the parents, and seek the
+                            assistance of the Police in the area,
+                            Grama Sevaka, and the AG office in order
+                            to provide security for the children.
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+    </div>
+    <div>
+        <br />
+    </div>
+    <div class="div1 text-center">
+    
+
+    </div>
+<script>
+let slideIndex = 0;
+DisplaySl() ;
+
+function DisplaySl() {
+  let i;
+  let slides = document.getElementsByClassName("him");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(DisplaySl, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+</body>
+</html>

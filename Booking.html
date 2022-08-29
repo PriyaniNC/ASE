@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+
+    <title></title>
+    <link rel="stylesheet" href="style1.css">
+
+</head>
+<body>
+    <div class="text-center">
+       
+    </div>
+    <div>
+
+        <center>
+            <table class="tcolor" width="80%">
+                <colgroup>
+                    <col style="background-color: #56c5e1">
+                </colgroup>
+                <tr>
+                   
+                    <td colspan="3" bgcolor="#56c5e1" height="20" style="font-family:verdana">
+                        <div class="navi">
+
+                            
+                            <a href="Home.html">About Us</a>
+                            <a href="Facility.html">Facilities for you</a>
+                            <a href="#Around">Around</a>
+	           <a href="#Rooms">Rooms</a>
+                            <a class="active" href="#Booking">Resrvation of rooms</a>
+                            
+                        </div>
+                    </td>
+                </tr>
+              <tr>
+               <td colspan="3">
+                    <div class="slcon">
+
+<div class="him fade">
+
+  <img src="Presentation1.jpg" style="width:100%">
+
+</div>
+
+<div class="him fade">
+ 
+  <img src="im2.jpg" style="width:100%">
+  
+</div>
+
+
+
+</div>
+<br>
+
+<div>
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+              
+              </td>
+           </tr>
+               
+                <tr>
+                    <td colspan="3">
+                        <p align="center" class="font1"><i>"Because there's nothing more beautiful than the way the ocean refuses to stop kissing the 
+			shoreline, no matter how many times it's sent away." </i></p>
+                          <p align="right" class="font1"><i>– Sarah Kay</i></p>
+                        
+                    </td>
+                </tr>
+                <colgroup>
+                    <col span="2" style="background-color:#e2fbfd   ;">
+                </colgroup>
+                <tr>
+                    <td width="25%">
+                        <div class="vernavi">
+                            <a href="Home.html">About Us</a>
+                            <a class="active"  href="Facility.html">Facilities for you</a>
+                            <a href="#Around">Around</a>
+	           <a href="#Rooms">Rooms</a>
+                            <a class="active" href="#Booking">Reservation of rooms</a>
+                        </div>
+                    </td>
+                    <td width="20%"><img src="rs1.jpg" width="250" height="200" /></td>
+                    <td>
+	    <h3>Come join with us….experience good quality services… We offer you many more facilities… </h3>
+                        <h2>Resturant</h2>
+                        <p>
+                           Dine with a harmony … and enjoy your meal with our fine dine restaurants…..
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td >
+ 		<h2>Room Service</h2>
+                        <p>
+                           Friendly on time room services is a best way to keep someone happy.
+                        </p>
+                      
+                    </td>
+<td width="20%"><img src="rs2.jpg" width="250" height="200" /></td>
+</td>
+                </tr>
+                <tr>
+                    <td></td>
+	<td width="20%"><img src="cl1.jpg" width="250" height="200" /></td>  </td>
+                    <td colspan="2">
+                        <h2>Club Facilities</h2>
+                        <p>
+                            The future of a country will depend on the
+                            children living today. If the children are
+                            directed correctly, educated, and cared well
+                            today, the country’s future will flourish.
+                            So, our responsibility today is to educate
+                            and protect the children well, but that is
+                            not what is happening today. If the majority
+                            of children give up education and do jobs
+                            with their parents, their lives will not be
+                            secure.
+                        </p>
+                        
+                    </td>
+                </tr>
+            </table>
+        </center>
+    </div>
+    <div>
+        <br />
+    </div>
+    
+<script>
+let slideIndex = 0;
+DisplaySl() ;
+
+function DisplaySl() {
+  let i;
+  let slides = document.getElementsByClassName("him");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(DisplaySl, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+</body>
+</html>

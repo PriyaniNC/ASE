@@ -1,0 +1,136 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background-image: url("Images1/ppp1.jpg");
+    height: 3000px; /* You must set a specified height */
+    /* background-position: center; /* Center the image */
+
+    background-size: cover;
+}
+
+h1 {
+    color: #03055C;
+    font-family: Brush Script MT;
+}
+
+h2 {
+    color: #1104AD;
+    font-family: Georgia;
+}
+
+.tcolor {
+    background-color: #E2F6F9;
+}
+
+td, th {
+    padding: 3px;
+}
+
+table {
+    border-spacing: 0px;
+}
+
+.font1 {
+    color: blue;
+    font-size: 15px
+}
+
+.div1 {
+    background-color: #e2fbfd;
+}
+
+.navi a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 2px;
+}
+
+    .navi a:hover {
+        background-color: #BCB88A;
+        color: #513B1C;
+    }
+
+    .navi a.active {
+        background-color: #8bf5ba;
+        color: #FFFFC2;
+    }
+
+.vernavi a {
+   display: block;
+    color: black;
+    padding: 14px;
+    text-decoration: none;
+    font-size: 17px;
+    border-radius: 5px;
+   
+}
+
+.vernavi a:hover {
+    background-color: #BCB88A;
+    color: #513B1C;
+}
+
+.vernavi a.active {
+    background-color: #8bf5ba;
+    color: #FFFFC2;
+}
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.him {display: none;}
+img {vertical-align: middle;}
+
+
+.slcon {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
