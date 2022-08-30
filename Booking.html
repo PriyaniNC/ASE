@@ -26,9 +26,9 @@
                             
                             <a href="Home.html">About Us</a>
                             <a href="Facility.html">Facilities for you</a>
-                            <a href="#Around">Around</a>
+                            <a href="Around.html">Around</a>
 	           <a href="#Rooms">Rooms</a>
-                            <a class="active" href="#Booking">Resrvation of rooms</a>
+                            <a class="active" href="Booking.html">Resrvation of rooms</a>
                             
                         </div>
                     </td>
@@ -39,13 +39,13 @@
 
 <div class="him fade">
 
-  <img src="Presentation1.jpg" style="width:100%">
+  <img src="images\Presentation1.jpg" style="width:100%">
 
 </div>
 
 <div class="him fade">
  
-  <img src="im2.jpg" style="width:100%">
+  <img src="images\im2.jpg" style="width:100%">
   
 </div>
 
@@ -54,10 +54,10 @@
 </div>
 <br>
 
-<div>
+<div><center>
   <span class="dot"></span> 
   <span class="dot"></span> 
-  <span class="dot"></span> 
+  <span class="dot"></span> </center>
 </div>
 
               
@@ -66,66 +66,93 @@
                
                 <tr>
                     <td colspan="3">
-                        <p align="center" class="font1"><i>"Because there's nothing more beautiful than the way the ocean refuses to stop kissing the 
-			shoreline, no matter how many times it's sent away." </i></p>
-                          <p align="right" class="font1"><i>– Sarah Kay</i></p>
-                        
+                       <center> <h1><i>“My soul is full of longing for the secrets of the sea, 
+		and the heart of the great ocean sends a thrilling pulse through me.”<br/>– Henry Wadsworth Longfellow </i></h1></center> 
+                         
                     </td>
                 </tr>
                 <colgroup>
                     <col span="2" style="background-color:#e2fbfd   ;">
                 </colgroup>
-                <tr>
+                 <form action="action1.php" method="post">
+
+	<tr>
                     <td width="25%">
                         <div class="vernavi">
-                            <a href="Home.html">About Us</a>
-                            <a class="active"  href="Facility.html">Facilities for you</a>
-                            <a href="#Around">Around</a>
+                             <a href="Home.html">About Us</a>
+                            <a href="Facility.html">Facilities for you</a>
+                            <a href="Around.html">Around</a>
 	           <a href="#Rooms">Rooms</a>
-                            <a class="active" href="#Booking">Reservation of rooms</a>
+                            <a class="active" href="Booking.html">Resrvation of rooms</a>
                         </div>
                     </td>
-                    <td width="20%"><img src="rs1.jpg" width="250" height="200" /></td>
-                    <td>
-	    <h3>Come join with us….experience good quality services… We offer you many more facilities… </h3>
-                        <h2>Resturant</h2>
-                        <p>
-                           Dine with a harmony … and enjoy your meal with our fine dine restaurants…..
-                        </p>
-                    </td>
+
+                    <td colspan="2" width="70%">
+                       <center><h2> Customer Reservation</h2></center></td>
+                     </tr>
+	<tr><td></td>
+	<td>
+	  <label for="Check_in">Check in:</label>
+ 	 <input type="date" id="CheckIn" name="checkin">
+               
+               </td>
+	<td>
+	  <label for="Check_Out">Check Out:</label>
+ 	 <input type="date" id="Checkout" name="checkout">
+                </td>
                 </tr>
-                <tr>
-                    <td></td>
-                    <td >
- 		<h2>Room Service</h2>
-                        <p>
-                           Friendly on time room services is a best way to keep someone happy.
-                        </p>
-                      
-                    </td>
-<td width="20%"><img src="rs2.jpg" width="250" height="200" /></td>
-</td>
-                </tr>
-                <tr>
-                    <td></td>
-	<td width="20%"><img src="cl1.jpg" width="250" height="200" /></td>  </td>
-                    <td colspan="2">
-                        <h2>Club Facilities</h2>
-                        <p>
-                            The future of a country will depend on the
-                            children living today. If the children are
-                            directed correctly, educated, and cared well
-                            today, the country’s future will flourish.
-                            So, our responsibility today is to educate
-                            and protect the children well, but that is
-                            not what is happening today. If the majority
-                            of children give up education and do jobs
-                            with their parents, their lives will not be
-                            secure.
-                        </p>
+                <tr><td></td>
+                   <td>
+	<br/>
+	<label for="Room">Select a Room type:</label> <br/><br/>
+                 <lable for="RA">Room availability</lable></td>
                         
-                    </td>
-                </tr>
+                 <td><br/><select id="roomT" name="roomtype">
+  		<option value="Single">Single room</option>
+ 		 <option value="Double">Double room</option>
+  		<option value="Sweet">Sweet room</option>
+  		<option value="Royal">Royal Suit</option>
+		<option value="Residential">Residential Suit</option>
+	</select>
+
+               <input type="text" name="RoomA" >
+	</td></tr>
+                 <tr><td></td>
+	<td colspan="2"><hr/></td>
+	</tr>
+	<tr><td></td>
+	<td width="30%">
+		<br/>
+		<lable for="NoO"> Number of occupents :</lable><br/><br/>
+		<lable for="coName">Customer Name         :</lable><br/><br/>
+		<lable for="coAdd">Customer Address     :</lable><br/><br/>
+		<lable for="coCon">Customer Contact      :</lable><br/><br/>
+		<lable for="email">Customer Email      :</lable><br/><br/></td>
+
+                  <td>
+		
+		<input type="text" name="NoO" ><br/><br/>
+		<input type="text" name="coName" ><br/><br/>
+		<input type="text" name="coAdd" ><br/><br/>
+		<input type="text" name="coCon" ><br/><br/>
+		<input type="text" name="email" ><br/><br/></td></tr>
+
+
+               <tr><td></td><td colspan="2"><center>
+		
+			<input type="submit" name="submit" Value="submit">
+			<input type="button" name="search" Value="Search">
+			<input type="button" name="cancel" Value="Cancel">
+		</center>
+		<hr/>
+ 	    </td>
+	</form>
+            <tr height="300"><td></td><td></td><td><input type="button" name="staff" Value="Hotel Staff"></td></tr>
+          <tr><td colspan="3" bgcolor="white"></td></tr>
+         <tr><td height="50" colspan="3"><center><h5><i>Kaluwella, Galle<br/>
+			Contact: 091-3256781
+			<br/>e-mail: seabreez@gmail.com</i></h5></center></td></tr>
+    
             </table>
         </center>
     </div>
