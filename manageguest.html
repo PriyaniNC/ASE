@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+
+    <title></title>
+    <link rel="stylesheet" href="Style1.css">
+  	<script src="https://kit.fontawesome.com/a1fc51296d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="text-center">
+       
+    </div>
+    <div>
+
+        <center>
+            <table class="tcolor" width="80%">
+                <colgroup>
+                    <col style="background-color: #56c5e1">
+                </colgroup>
+                <tr>
+                   
+                    <td colspan="3" bgcolor="#56c5e1" height="20" style="font-family:verdana">
+                        <div class="navi">
+
+                            
+                            <a class="active" href="Home.html">About Us</a>
+                            <a href="Facility.html">Facilities for you</a>
+                            <a href="#Around">Around</a>
+	                        <a href="#Rooms">Rooms</a>
+                            <a href="#Booking">Booking</a>
+                            
+                        </div>
+                    </td>
+                </tr>
+            <tr>
+               <td colspan="3">
+                    <div class="slcon">
+                        <div class="him fade">
+
+  <img src="images\Presentation1.jpg" style="width:100%">
+
+</div>
+
+<div class="him fade">
+ 
+  <img src="images\im2.jpg" style="width:100%">
+  
+</div>
+<div class="him fade">
+
+  <img src="images\im3.jpg" style="width:100%">
+
+</div>
+                    </div>
+                    <br>
+
+                     <div>
+                          <span class="dot"></span> 
+                          <span class="dot"></span> 
+                          <span class="dot"></span> 
+                     </div> 
+              </td>
+           </tr>
+               
+                <tr>
+                    <td colspan="3">
+                        <p align="center" class="font1"><i>“The <b>Ocean</b> stirs the heart, inspires the imagination, and brings eternal joy to the soul."</i></p>
+                          <p align="right" class="font1"><i>– Wyland</i></p>
+                        
+                    </td>
+                </tr>
+                <colgroup>
+                    <col span="2" style="background-color:#e2fbfd   ;">
+                </colgroup>
+                <tr>
+                    <td width="25%">
+                        <div class="vernavi">
+                            <a class="active" href="Home.html">About Us</a>
+                            <a href="Facility.html">Facilities for you</a>
+                            <a href="#Around">Around</a>
+	                        <a href="#Rooms">Rooms</a>
+                            <a href="#Booking">Booking</a>
+                        </div>
+                    </td>					
+                    <td width="5%"></td>
+                    <td>
+                        <ins><h2>Customer management page</h2></ins>					
+                    </td>
+                </tr>
+                <tr>
+				     <td>
+					 
+					    <td width="20%">
+						
+						    <td>
+							<img src="sea.jpg" class="images">
+                             <div class="manageguest">							 
+				                 <div class="manage">								    
+						             <h3></h3>
+							            <form id="register" method="post">
+							                 <label>First name</label><br>
+							                 <input type="text" name="fname" id="name" placeholder="Enter your firstname"><br><br>
+						                     <label>Last name</label><br>
+							                 <input type="text" name="lname" id="name" placeholder="Enter your Last name"><br><br>
+											 <label>Email</label><br>
+							                 <input type="email" name="email" id="name" placeholder="Enter your email"><br><br>
+											 <label>Adress</label><br>
+							                 <input type="text" name="adress" id="name" placeholder="Enter your adress"><br><br>
+											 <label>Contact Number</label><br>
+							                 <input type="number" name="contact" id="name" placeholder="Enter your contact informations"><br><br>
+										     <br>
+											 <label>gender</label><br><br>
+											 &nbsp;&nbsp;&nbsp;
+							                 <input type="radio" name="gender" id="male">
+											 &nbsp;
+											 <span id="male">Male</span>
+											 &nbsp;&nbsp;&nbsp;
+											 <input type="radio" name="gender" id="female">
+											 &nbsp;
+											 <span id="female">Female</span><br><br>
+											 <div>
+											<label>Status</label><br>
+							                 <select name="topic" id="topic">
+                                                <option value="status" selected="selected">Please select current status</option>
+                                             </select>
+											 <input type="submit" value="ADD" name="add" id="add">
+											 <input type="submit" value="Edit" name="edit" id="edit">
+											 <input type="submit" value="Delete" name="delete" id="delete">
+											 </div>
+							            </form>
+						 
+				                 </div>
+				            </div>
+							</td>
+						</td>
+					</td>
+
+     
+                </tr>
+				<tr>
+                    
+                </tr>
+				<tr>
+                    
+                </tr>
+				<tr>
+                    
+                </tr>
+            </table>
+        </center>
+    </div>
+    <div>
+        <br />
+    </div>
+    <div class="div1 text-center">
+    
+
+    </div>
+<script>
+let slideIndex = 0;
+DisplaySl() ;
+
+function DisplaySl() {
+  let i;
+  let slides = document.getElementsByClassName("him");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(DisplaySl, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+</body>
+</html>
